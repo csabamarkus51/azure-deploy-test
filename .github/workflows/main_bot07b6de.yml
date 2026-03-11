@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'bot07b6de'
           slot-name: 'Production'
-          package: node-app
+          package: node-app/lib/src
           
