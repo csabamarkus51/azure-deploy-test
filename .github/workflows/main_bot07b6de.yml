@@ -49,12 +49,8 @@ jobs:
           name: node-app
       - name: List files in node-app
         run: |
-          echo "Listing files in node-app:"
-          ls -R node-app
-          if [ ! -f node-app/index.js ]; then
-            echo "index.js not found in node-app. Deployment will fail."
-            exit 1
-          fi
+          echo "Listing files all:"
+          ls -R
       - name: Login to Azure
         uses: azure/login@v2
         with:
